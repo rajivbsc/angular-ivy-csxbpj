@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core'
 import {HttpClient} from '@angular/common/http'
-import {} from '@angular/Ob'
+
 @Injectable(
   {
     providedIn:'root'
@@ -15,6 +15,6 @@ export class loginService
   }
   authenticate(username:string,password:string)
   {
-    return this._http.get<boolean>('/ValidateLogin.js');
+    return this._http.get<boolean>('./ValidateLogin.js');
   }
 }

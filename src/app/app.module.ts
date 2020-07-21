@@ -13,6 +13,6 @@ import {TestService} from './sample.service'
   imports:      [ BrowserModule, FormsModule,HttpClientModule ],
   declarations: [ AppComponent, HelloComponent,customPipes ],
   bootstrap:    [ AppComponent ],
-  providers:[HttpClientModule,HttpClient,TestService,authService,{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }]  
+  providers:[HttpClientModule,HttpClient,TestService,authService]//{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }]  
 })
 export class AppModule { }

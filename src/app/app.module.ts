@@ -9,6 +9,7 @@ import {customPipes} from './custompipe.pipe'
 import { authService } from './auth.service'
 import {AuthInterceptor} from './auth.interceptors'
 import {TestService} from './sample.service'
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule,HttpClientModule ],
   declarations: [ AppComponent, HelloComponent,customPipes ],

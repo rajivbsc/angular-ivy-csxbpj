@@ -27,6 +27,9 @@
               "src/app/design",
                "src/app/design/order"
             ],
+            "example":[
+              "src/app/example"
+            ],
             "styles": [
               "src/styles.css"
             ],
@@ -87,6 +90,9 @@
             "design":[
               "src/app/design",
               "src/app/design/order"
+            ],
+            "example":[
+              "src/app/example"
             ]
           }
         },

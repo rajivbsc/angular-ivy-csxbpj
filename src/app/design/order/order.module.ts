@@ -5,7 +5,7 @@ import { orderComponent } from './order.component'
 
 @NgModule({
   imports: [
-    CommonModule,
+   CommonModule,
     orderRoutingModule
   ],
   declarations: [orderComponent]

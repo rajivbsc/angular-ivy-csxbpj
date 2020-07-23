@@ -24,7 +24,8 @@
              
             ],
             "design":[
-              "src/design"
+              "src/app/design",
+               "src/app/design/order"
             ],
             "styles": [
               "src/styles.css"
@@ -84,7 +85,8 @@
               "src/assets"
             ],
             "design":[
-              "src/design"
+              "src/app/design",
+              "src/app/design/order"
             ]
           }
         },

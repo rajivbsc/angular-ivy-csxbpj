@@ -9,11 +9,12 @@ import {customPipes} from './custompipe.pipe'
 import { authService } from './auth.service'
 import {AuthInterceptor} from './auth.interceptors'
 import {TestService} from './sample.service'
-
+import {orderModule} from './design/order/order.modu'
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,HttpClientModule ],
+  imports:      [ BrowserModule, FormsModule,HttpClientModule,orderModule ],
   declarations: [ AppComponent, HelloComponent,customPipes ],
   bootstrap:    [ AppComponent ],
   providers:[HttpClientModule,HttpClient,TestService,authService]//{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }]  
+  
 })
 export class AppModule { }

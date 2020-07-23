@@ -4,7 +4,7 @@ import {customPipes} from './custompipe.pipe'
 import { HttpClient } from '@angular/common/http';
 import {TestService} from './sample.service'
 import { IAuthToken } from './IAuthToken';
-import * as tokens from  '../design/token.json';
+
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',

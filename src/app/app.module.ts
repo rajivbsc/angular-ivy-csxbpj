@@ -12,11 +12,12 @@ import {TestService} from './sample.service'
 import {RouterModule,RouterOutlet} from '@angular/router'
 import {appRoutingModule} from './app-routing.module'
 import {obserComponent} from './example/observ.component'
+//import {result} from './result.interface'
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,HttpClientModule,orderModule,appRoutingModule ],
+  imports:      [ BrowserModule, FormsModule,HttpClientModule,orderModule,appRoutingModule],
   declarations: [ AppComponent, HelloComponent,customPipes,obserComponent ],
   bootstrap:    [ AppComponent ],
   providers:[HttpClientModule,HttpClient,TestService,authService]//{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }]  
   ,schemas: [CUSTOM_ELEMENTS_SCHEMA,NO_ERRORS_SCHEMA]
 })
-export class AppModule { }
+export class AppModule {}

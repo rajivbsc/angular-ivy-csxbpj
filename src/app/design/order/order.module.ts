@@ -10,4 +10,4 @@ import { orderComponent } from './order.component'
   ],
   declarations: [orderComponent]
 })
-export class orderModule { }
+export class orderModule{}

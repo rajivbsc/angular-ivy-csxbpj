@@ -6,10 +6,11 @@
 <h1>
   {{title}}
 </h1>
-<zippy [exps]="2" (open)="onOpen($event)" (close)="onClose($event)"></zippy>
+<zippy [exps]="" (open)="onOpen($event)" (close)="onClose($event)"></zippy>
 <div>
   <br>
 </div>
 <button routerLink="/order">Orders</button>
 
 <router-outlet></router-outlet>
+

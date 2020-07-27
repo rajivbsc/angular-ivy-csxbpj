@@ -1,5 +1,5 @@
 "use strict";
-import { Component, VERSION,DirectiveDecorator } from '@angular/core';
+import { Component, VERSION,DirectiveDecorator,OnInit, SimpleChanges } from '@angular/core';
 import {customPipes} from './custompipe.pipe'
 import { HttpClient } from '@angular/common/http';
 import {TestService} from './sample.service'
@@ -12,27 +12,34 @@ import {obserComponent} from './example/observ.component'
   styleUrls: [ './app.component.css' ]
   
 })
-export class AppComponent {
+ @Console('Hey Console')
+export class AppComponent implements OnInit {
   name = 'Angular ' + VERSION.major;
   value1 = 10;
   value2 = 20;
  title:any='testnowrouting';
+ spnName:any;
  results:any;
   constructor(private http:HttpClient,testService:TestService)
   {
+    console.log('Constructor Call')
   //  testService.getValues().subscribe(res => {
   //       this.results = res;
   //        console.log( this.results.title);
   //     });;
    //console.log(this.results.userId);
-  
+
   }
+ 
   onOpen($event)
   {
+    this.value2 = 30;
 console.log('open');
   }
    onClose($event)
   {
+    this.value1 = 40;
+    
     console.log('close');
   }
   pass($event)
@@ -40,6 +47,11 @@ console.log('open');
     
   }
   
+  ngOnInit()
+{
+console.log('Init Call')
+  }
+ 
 
 }
 function Console(message) {

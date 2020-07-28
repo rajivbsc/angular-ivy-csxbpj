@@ -11,6 +11,6 @@ export class authService
   getAuthToken()
   {
     console.log("Interceptor");
-    return this.http.get<IAuthToken>("./Token.json");
+    ///return this.http.get<IAuthToken>("./Token.json");
   }
 }

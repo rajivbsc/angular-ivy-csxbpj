@@ -6,17 +6,17 @@ import { Observable } from "rxjs";
   providedIn:'root'
 })
 
-export class AuthInterceptor implements HttpInterceptor
+export class AuthInterceptor //implements HttpInterceptor
 {
   constructor(private authService:authService)
   {
 
   }
-  intercept(req:HttpRequest<any>,next:HttpHandler):Observable<HttpEvent<any>>{
-    // console.log(req.url);
-    console.log("Interceptor Checking First After Test Files Read by Http");
-    return next.handle(req);
-  };
+  // intercept(req:HttpRequest<any>,next:HttpHandler):Observable<HttpEvent<any>>{
+  //   // console.log(req.url);
+  //   console.log("Interceptor Checking First After Test Files Read by Http");
+  //   return next.handle(req);
+  // };
 }
 //   {
 //     var token = this.authService.getAuthToken();
